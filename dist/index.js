@@ -9003,6 +9003,7 @@ async function run() {
   
   await octokit.rest.issues.create({
     ...context.repo,
+    title: 'Commenter',
     issue_number: pull_request.number,
     body: "Congratulations, You've won!",
   });
