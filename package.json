@@ -1,0 +1,23 @@
+{
+  "name": "golden-ticket-action",
+  "version": "1.0.0",
+  "description": "Golden ticket dispenser action",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crackitty/golden-ticket-action.git"
+  },
+  "author": "Charlie Roche",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crackitty/golden-ticket-action/issues"
+  },
+  "homepage": "https://github.com/crackitty/golden-ticket-action#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}

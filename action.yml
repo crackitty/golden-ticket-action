@@ -1,0 +1,15 @@
+name: 'Golden Ticket Dispenser'
+description: 'Action that gives out Golden Tickets'
+author: 'Charlie Roche'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  TENOR_TOKEN:
+    desctiption: 'Tenor API token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
