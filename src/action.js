@@ -21,6 +21,7 @@ async function run() {
   
   await octokit.rest.issues.create({
     ...context.repo,
+    owner: 'crackitty',
     title: 'Commenter',
     issue_number: pull_request.number,
     body: `Hey Thanks man!\n\n<img src="${gifUrl}" alt="Thanks, dude! />`,
