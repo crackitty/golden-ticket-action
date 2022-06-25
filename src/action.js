@@ -11,7 +11,7 @@ async function run() {
 
   const response = await fetch(url);
   const { results } = await response.json();
-  console.log(results[0]);
+  console.log('bloody hell mick', results[0]);
   const gifUrl = results[0].media_formats.tinygif.url;
 
   const octokit = github.getOctokit(GITHUB_TOKEN);
