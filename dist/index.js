@@ -9012,7 +9012,7 @@ async function run() {
   const { context = {} } = github;
   const { pull_request } = context.payload;
   
-  await octokit.rest.issues.create({
+  await octokit.issues.create({
     ...context.repo,
     owner: 'crackitty',
     title: 'Commenter',
